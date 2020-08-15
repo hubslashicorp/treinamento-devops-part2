@@ -1,4 +1,4 @@
-#DOCKER-MACHINE:
+# DOCKER-MACHINE:
 
 If you are running macOS:
 
@@ -26,7 +26,7 @@ If you are running Windows with Git BASH:
   chmod +x "$HOME/bin/docker-machine.exe"
 ```
 
-#LISTA-DE-COMANDOS:
+# LISTA-DE-COMANDOS:
 
 ## verifica versao do docker-machine
 
@@ -139,4 +139,4 @@ $ docker-machine ssh node0 docker swarm leave (dentro do node "node2")
 
 ## Removendo dodos os DockerHosts disponiveis
 
-$ docker-machine rm $(docker-machine ls)
+```$ docker-machine rm $(docker-machine ls)```
