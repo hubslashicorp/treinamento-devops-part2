@@ -36,7 +36,7 @@ Os requisitos abaixo devem estar disponíveis em seu sistema operacional:
 
 * [Git](https://git-scm.com/downloads)
 * [Docker](https://docs.docker.com/engine/installation/)
-* [Docker Compose](https://docs.docker.com/compose/install/) `[Somente Windows]`
+* [Docker Compose](https://docs.docker.com/compose/install/)
 
 Confira se o `docker-compose` está instalado usando o comando abaixo: 
 
