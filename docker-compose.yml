@@ -1,0 +1,51 @@
+version: '3'
+services:
+
+    wordpress:
+        container_name: wordpress
+        build:
+            context: etc/wordpress
+            dockerfile: Dockerfile
+        ports:
+            - "80:80"
+        restart: always
+        depends_on:
+            - mysql
+        volumes:
+            - ./src/themes:/var/www/html/wp-content/themes
+            - ./src/uploads:/var/www/html/wp-content/uploads
+            - ./src/plugins:/var/www/html/wp-content/plugins
+        environment:
+            WORDPRESS_DB_HOST: mysql
+            WORDPRESS_DB_USER: wordpress
+            WORDPRESS_DB_PASSWORD: wordpress
+
+    mysql:
+        container_name: mysql
+        build:
+            context: etc/mysql
+            dockerfile: Dockerfile
+        ports:
+            - "3306:3306"
+        restart: always
+        volumes:
+            - ./data/mysql:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: wordpress
+            MYSQL_USER: wordpress
+            MYSQL_PASSWORD: wordpress
+
+    phpmyadmin:
+        container_name: phpmyadmin
+        build:
+            context: etc/phpmyadmin
+            dockerfile: Dockerfile
+        ports:
+            - "8080:80"
+        restart: always
+        depends_on:
+            - mysql
+        environment:
+            PMA_ARBITRARY: 1
+            PMA_HOST: mysql
