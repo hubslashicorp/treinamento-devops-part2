@@ -1,3 +1,3 @@
-FROM mysql:5.7
+FROM mysql:latest
 
 LABEL maintainer="Dihogo Teixeira <devops@slashicorp.com.br>"

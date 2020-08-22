@@ -1,3 +1,3 @@
-FROM wordpress:4.9.8-php7.2
+FROM wordpress:latest
 
 LABEL maintainer="Dihogo Teixeira <devops@slashicorp.com.br>"
