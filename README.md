@@ -36,7 +36,7 @@ Os requisitos abaixo devem estar disponíveis em seu sistema operacional:
 
 * [Git](https://git-scm.com/downloads)
 * [Docker](https://docs.docker.com/engine/installation/)
-* [Docker Compose](https://docs.docker.com/compose/install/) `[Somente Windows]`
+* [Docker Compose](https://docs.docker.com/compose/install/)
 
 Confira se o `docker-compose` está instalado usando o comando abaixo: 
 
@@ -132,17 +132,14 @@ ___
 
 | Item  | Descrição                                |
 |-------|------------------------------------------|
-|  1.0  |   [lab] Instalando VirtualBox            |
-|  2.0  |   [lab] Instalando Vagrant               |
-|  3.0  |   Inspecionando Vagranfile               |
-|  4.0  |   [lab] Provisionando VM com Vagrant     |
-|  5.0  |   Entendendo o GNU/Linux                 |
-|  5.1  |   [lab] Principais comandos GNU/Linux    |
-|  6.0  |   Entendendo o Docker                    |
-|  6.1  |   [lab] Principais comandos Docker       |
-|  6.2  |   Entendendo Dockerfile                  |
-|  6.3  |   [lab] Construindo primeira imagem      |
-|  6.4  |   [lab] Commitando imagem no docker hub  |
+|  1.0  |   [lab] Instalando Docker-machine        |
+|  2.0  |   [lab] Instalando Docker-compose        |
+|  3.0  |   Inspecionando Dockerfile               |
+|  4.0  |   [lab] Provis. VM com Docker-machine    |
+|  5.0  |   [lab] Principais comandos Docker-mach  |
+|  5.1  |   Entendendo Dockerfile                  |
+|  6.0  |   [lab] Construindo primeira imagem      |
+|  6.1  |   [lab] Commitando imagem no docker hub  |
 
 
 Mais uma vez, sinta-se à vontade para esclarecer duvidas com relação a instalação e tudo o mais
